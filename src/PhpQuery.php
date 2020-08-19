@@ -117,7 +117,7 @@ abstract class PhpQuery {
   public static $enableCssShorthand = FALSE;
 
   public static function use_function($ns = '\\', $func = 'pq') {
-    if ($ns{0} !== '\\') {
+    if ($ns[0] !== '\\') {
       $ns = '\\' . $ns;
     }
     if (!function_exists($ns . '\\' . $func)) {
